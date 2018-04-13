@@ -51,6 +51,13 @@ $(document).ready(function() {
             return randomNumberappend;
         }
     numberDisplay();
+
+    function resetScore(){
+        var result2 = $("#totalScore");
+        var result3 = $("<div>"+ result1 + "<div>");
+        $(result2.append(result3));
+    }
+    console.log(resetScore());
     function reset(){
         number_1();
         number_2();
@@ -58,9 +65,7 @@ $(document).ready(function() {
         number_4();
         var resetNumber = number();
         $("#randomNumber").text(resetNumber);
-        var result2 = $("#totalScore");
-        var result3 = $("<div>"+ result1 + "<div>");
-        $(result2.append(result3));
+       resetScore();
     }
 
     function win() {
