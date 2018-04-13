@@ -8,7 +8,6 @@ var randNumber5;
 var randomNumberdiv;
 var randomNumberappend;
 var result = 0;
-var result1 = 0;
 var wins = 1;
 var win1 = "WIN!"
 var losses = 1;
@@ -53,9 +52,11 @@ $(document).ready(function() {
     numberDisplay();
 
     function resetScore(){
-        var result2 = $("#totalScore");
-        var result3 = $("<div>"+ result1 + "<div>");
-        $(result2.append(result3));
+        var result1 = 0;
+        // var result2 = $("#totalScore");
+        // var result3 = $("<div>"+ result1 + "<div>");
+        // $(result2.append(result3));
+        $("#finalScore").text(result1);
     }
     console.log(resetScore());
     function reset(){
