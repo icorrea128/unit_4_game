@@ -1,11 +1,7 @@
 //Comments
 
-    //The remaining section of this code to be completed consists of the program recognizing that there is a second round to completed
-    //I am not sure why the program is not reconginizng that there is a round two
-    //I had the same code that was working before but after making some changes I broke the game
-    //Please help in the commentary section to determine what is the problem
-    //I am sure I am resetting correctly, so I am not sure what the problem is from here
-
+   //The game appears to be broken. The win/lose ogic only works for some randomNumbers.The reset is also a little off. 
+   //Please help me to solve the problems with the code
 
 //Global Variables
 
