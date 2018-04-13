@@ -74,8 +74,8 @@ $(document).ready(function() {
         // var result2 = $("<div>"+ win1 + "<div>");
         // $(result1.append(result2));
         reset();
-        result = 0;
-        $("#totalScore").text(result);
+        // var result1 = 0;
+        // $("#totalScore").text(result1);
     }
 
     function lose(){
@@ -116,9 +116,13 @@ $("#crystal_1").on("click",function(){
 //logic to determine if win or lost 
     if (result == randomNumber){
         win();
+        result = 0;
+        $("#totalScore").text(result)
     }
     else if (result > randomNumber){
         lose(); 
+        result = 0;
+        $("#totalScore").text(result)
     }
 });
 
@@ -130,9 +134,13 @@ $("#crystal_2").on("click",function(){
 //logic to determine if win or lost 
     if (result == randomNumber){
         win();
+        result = 0;
+        $("#totalScore").text(result)
     }
     else if (result > randomNumber){
-        lose(); 
+        lose();
+        result = 0;
+        $("#totalScore").text(result) 
     }
 });
 
@@ -144,9 +152,13 @@ $("#crystal_3").on("click",function(){
 //logic to determine if win or lost 
     if (result == randomNumber){
         win();
+        result = 0;
+        $("#totalScore").text(result)
     }
     else if (result > randomNumber){
         lose(); 
+        result = 0;
+        $("#totalScore").text(result)
     }
 });
 
@@ -158,10 +170,14 @@ $("#crystal_4").on("click",function(){
     $("#totalScore").text(result);
     if (result == randomNumber){
         win();
+        result = 0;
+        $("#totalScore").text(result)
         
     }
     else if (result > randomNumber){
         lose(); 
+        result = 0;
+        $("#totalScore").text(result)
     }
 console.log(result)
 });
