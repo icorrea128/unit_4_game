@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/game.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>
+                    Crystal Collector Game
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class ="row">
+                        <p>
+                            You will be given a random number at the start of the game. 
+                        </p>
+                        <P>
+                            There are four crystals below. By clicking on a crystal game you will add a specific amount of points to your total score. 
+                        </P>
+                        <p>
+                            You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+                        </p>
+                        <p>
+                            The value of each cystal is hidden from you until you click on it. 
+                        </p>
+                        <p>
+                            Each time when the game starts, the game will change the values of each crystal.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="randomNumber">
+                                
+                            </div>
+                        </div>
+                        <div id="column2" class="col-md-6">
+                            <div id="winLose">
+                               
+                            </div>
+                            <div id="wins">
+                                
+                            </div>
+                            <div id="lose">
+                                
+                            </div>
+                        </div>   
+                    </div>
+                    <div id="crystals" class="row">
+                        <input type="image" id="crystal_1" val="7" src="https://thumbs.dreamstime.com/b/small-blue-crystal-gem-hidden-treasure-riches-reward-flash-came-design-variation-cartoon-cute-vector-illustration-82333349.jpg" height="150" width="150">
+                        <input type="image" id="crystal_2" val="17"src="https://i.pinimg.com/originals/17/47/0c/17470cba5a47b60ae62eecef2310689b.jpg" height="150" width="150">
+                        <input type="image" id="crystal_3" val="1"src="https://images.clipartlogo.com/files/istock/previews/1068/106812419-crystals-icon-in-cartoon-style-isolated-on-white-background-mine.jpg" height="150" width="150">
+                        <input type="image" id="crystal_4" val="8" src="https://store-images.s-microsoft.com/image/apps.41154.13510798887124302.e67fe666-0b15-4451-be4b-cfc850ca11ba.e31e6db6-a7c4-4f7a-991f-95d1b5f570c0?w=180&h=270&q=60" height="150" width="150">
+                    </div>
+                    <div id="score" class="row">
+                        <div id="totalScore">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
