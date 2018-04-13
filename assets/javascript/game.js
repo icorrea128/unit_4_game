@@ -51,13 +51,13 @@ $(document).ready(function() {
         }
     numberDisplay();
 
-    function resetScore(){
-        var result1 = 0;
+    // function resetScore(){
+        result = 0;
         // var result2 = $("#totalScore");
         // var result3 = $("<div>"+ result1 + "<div>");
         // $(result2.append(result3));
-        $("#finalScore").text(result1);
-    }
+        $("#finalScore").text(result);
+    // }
     console.log(resetScore());
     function reset(){
         number_1();
