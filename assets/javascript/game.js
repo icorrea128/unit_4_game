@@ -55,11 +55,8 @@ $(document).ready(function() {
         number_2();
         number_3();
         number_4();
-        var result1 = 0;
         var resetNumber = number();
         $("#randomNumber").text(resetNumber);
-        //Resets total score to 0 however, not working in code
-        $("totalScore").text(result1)
     }
 
     function win() {
