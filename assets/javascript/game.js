@@ -74,6 +74,8 @@ $(document).ready(function() {
         // var result2 = $("<div>"+ win1 + "<div>");
         // $(result1.append(result2));
         reset();
+        result = 0;
+        $("#totalScore").text(result);
     }
 
     function lose(){
