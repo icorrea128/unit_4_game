@@ -1,4 +1,14 @@
+//Comments
+
+    //The remaining section of this code to be completed consists of the program recognizing that there is a second round to completed
+    //I am not sure why the program is not reconginizng that there is a round two
+    //I had the same code that was working before but after making some changes I broke the game
+    //Please help in the commentary section to determine what is the problem
+    //I am sure I am resetting correctly, so I am not sure what the problem is from here
+
+
 //Global Variables
+
 var randomNumber;
 var randNumber1
 var randNumber2;
@@ -14,6 +24,7 @@ var losses = 1;
 var lose1 = "LOSER!"
 var total_score;
 //Functions
+
 $(document).ready(function() {
 
     function number (){
@@ -51,13 +62,13 @@ $(document).ready(function() {
         }
     numberDisplay();
 
-    // function resetScore(){
+    function resetScore(){
         result = 0;
         // var result2 = $("#totalScore");
         // var result3 = $("<div>"+ result1 + "<div>");
         // $(result2.append(result3));
         $("#finalScore").text(result);
-    // }
+    }
     console.log(resetScore());
     function reset(){
         number_1();
@@ -66,7 +77,7 @@ $(document).ready(function() {
         number_4();
         var resetNumber = number();
         $("#randomNumber").text(resetNumber);
-       resetScore();
+        resetScore();
     }
 
     function win() {
@@ -120,17 +131,18 @@ $(document).ready(function() {
 //On Click Events for each crystal with a determined value 
 $("#crystal_1").on("click",function(){
     result = result + randNumber1
-    console.log(result);
     $("#totalScore").text(result);
 
 //logic to determine if win or lost 
     if (result == randomNumber){
         win();
+        // resetScore();
         // result = 0;
         // $("#totalScore").text(result)
     }
     else if (result > randomNumber){
         lose(); 
+        // resetScore();        
         // result = 0;
         // $("#totalScore").text(result)
     }
@@ -138,17 +150,18 @@ $("#crystal_1").on("click",function(){
 
 $("#crystal_2").on("click",function(){
     result = result + randNumber2
-    console.log(result);
     $("#totalScore").text(result);
 
 //logic to determine if win or lost 
     if (result == randomNumber){
         win();
+        // resetScore();        
         // result = 0;
         // $("#totalScore").text(result)
     }
     else if (result > randomNumber){
         lose();
+        // resetScore();        
         // result = 0;
         // $("#totalScore").text(result) 
     }
@@ -156,17 +169,18 @@ $("#crystal_2").on("click",function(){
 
 $("#crystal_3").on("click",function(){
     result = result + randNumber3
-    console.log(result);
     $("#totalScore").text(result);
 
 //logic to determine if win or lost 
     if (result == randomNumber){
         win();
+        // resetScore();        
         // result = 0;
         // $("#totalScore").text(result)
     }
     else if (result > randomNumber){
-        lose(); 
+        lose();
+        // resetScore();         
         // result = 0;
         // $("#totalScore").text(result)
     }
@@ -175,17 +189,17 @@ $("#crystal_3").on("click",function(){
 $("#crystal_4").on("click",function(){
     result = result + randNumber4
     console.log(result);
-
-//logic to determine if win or lost 
     $("#totalScore").text(result);
     if (result == randomNumber){
         win();
+        // resetScore();        
         // result = 0;
         // $("#totalScore").text(result)
         
     }
     else if (result > randomNumber){
-        lose(); 
+        lose();
+        // resetScore();         
         // result = 0;
         // $("#totalScore").text(result)
     }
